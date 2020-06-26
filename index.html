@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PeopleLog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="static/index.css">
+
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="heading-text">PeopleLog</h1>
+        </header>
+        <div class="container controls">
+            <button class="btn" onclick="opens(this);">Add to List</button>
+        </div>
+        <div class="container search-container">
+            <table class="list" id="list">
+                <tr>
+                    <th class="list-heading">ID</th>
+                    <th class="list-heading">Name</th>
+                    <th class="list-heading">Age</th>
+                    <th class="list-heading">Birth Date</th>
+                    <th class="list-heading">Sex</th>
+                </tr>
+            </table>
+        </div>
+        <div class="form-popup" id="myForm">
+            <div class="form-container">
+              <label for="name"><b>Name</b></label>
+              <input type="text" placeholder="Name" name="name" id="name" required></br>
+              <label for="age"><b>Age</b></label>
+              <input type="text" placeholder="Age" name="age" id="age" required></br>
+              <label for="dob"><b>Date Of Birth</b></label>
+              <input type="date" name="dob" id="dob" required></br>
+              <label for="sex"><b>Age</b></label>
+              <input type="text" placeholder="Sex" name="sex" id="sex" required></br>
+              <button type="submit" class="btn" onclick="submit();">Submit</button>
+            </div>
+          </div>
+        <script src="static/index.js"></script>
+    </body>
+</html>
